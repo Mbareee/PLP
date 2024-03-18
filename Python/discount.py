@@ -5,6 +5,6 @@ def calculate_discount(price,discount_percent):
     else:
         print(f'${price}')
 
-price = int(input("Enter the price of the item: "))
-discount_percent = int(input("Enter the discount of the item: "))
+price = float(input("Enter the price of the item: "))
+discount_percent = float(input("Enter the discount of the item: "))
 calculate_discount(price, discount_percent)
