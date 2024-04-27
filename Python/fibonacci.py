@@ -1,13 +1,18 @@
-phi = (1 + (5)**0.5) / 2
-n = int(input("How many terms of the Fibonacci sequence would you like to see? "))
-result = []
-def fibonaci(n):
-    for term in range(n):
-        ans1 = (((phi)**term) - ((1-phi)**term)) / (5)**0.5
-        result.append(int(ans1))
-    print(result)    
+fibionacci = []
 
-        
+def get_nums(N):
+    for x in range(N):
+        if x == 0:
+            fibionacci.append(x)
+
+        elif x ==1:
+            fibionacci.append(x)
     
 
-fibonaci(n)
+        else:
+            fibionacci.append(fibionacci[x-1] + fibionacci[x-2])
+
+    print(fibionacci)
+
+
+get_nums(10)
